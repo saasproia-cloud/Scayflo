@@ -15,10 +15,8 @@ model User {
   role         String    @default("user") // "user" | "admin"
   companyId    String    @unique
   company      Company   @relation(fields: [companyId], references: [id], onDelete: Cascade)
-<<<<<<< HEAD
-=======
-  passwordResets PasswordReset[]
->>>>>>> master
+
+
   createdAt    DateTime  @default(now())
 }
 
