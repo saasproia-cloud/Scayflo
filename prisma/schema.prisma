@@ -15,6 +15,10 @@ model User {
   role         String    @default("user") // "user" | "admin"
   companyId    String    @unique
   company      Company   @relation(fields: [companyId], references: [id], onDelete: Cascade)
+<<<<<<< HEAD
+=======
+  passwordResets PasswordReset[]
+>>>>>>> master
   createdAt    DateTime  @default(now())
 }
 
@@ -87,3 +91,17 @@ model Report {
   type       String   // "basic" | "professional"
   createdAt  DateTime @default(now())
 }
+<<<<<<< HEAD
+=======
+
+model PasswordReset {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  token      String   @unique
+  used       Boolean  @default(false)
+  expiresAt  DateTime
+  createdAt  DateTime @default(now())
+}
+
+>>>>>>> master
