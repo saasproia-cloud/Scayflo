@@ -37,8 +37,8 @@ export default function DashboardSettingsPage() {
   }, [])
 
   useEffect(() => {
-    const savedTheme = typeof window !== "undefined" ? localStorage.getItem("auditpro-theme") || "dark" : "dark"
-    const savedColor = typeof window !== "undefined" ? localStorage.getItem("auditpro-color") || "green" : "green"
+    const savedTheme = typeof window !== "undefined" ? localStorage.getItem("scayflo-theme") || "dark" : "dark"
+    const savedColor = typeof window !== "undefined" ? localStorage.getItem("scayflo-color") || "green" : "green"
     setTheme(savedTheme)
     setColorScheme(savedColor)
     applyTheme(savedTheme)
@@ -98,13 +98,13 @@ export default function DashboardSettingsPage() {
 
   const handleThemeChange = (newTheme: string) => {
     setTheme(newTheme)
-    if (typeof window !== "undefined") localStorage.setItem("auditpro-theme", newTheme)
+    if (typeof window !== "undefined") localStorage.setItem("scayflo-theme", newTheme)
     applyTheme(newTheme)
   }
 
   const handleColorChange = (newColor: string) => {
     setColorScheme(newColor)
-    if (typeof window !== "undefined") localStorage.setItem("auditpro-color", newColor)
+    if (typeof window !== "undefined") localStorage.setItem("scayflo-color", newColor)
     applyColorScheme(newColor)
   }
 

@@ -15,7 +15,7 @@ const plans = [
     name: "Free",
     price: "0",
     period: "/month",
-    description: "Perfect for discovering AuditPro and testing its features.",
+    description: "Perfect for discovering Scayflo and testing its features.",
     features: [
       { text: "Up to 3 clients", included: true },
       { text: "Basic dashboard", included: true },

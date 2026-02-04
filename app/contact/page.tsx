@@ -101,7 +101,7 @@ export default function ContactPage() {
               <span className="bg-gradient-to-r from-primary via-chart-2 to-primary bg-clip-text text-transparent">request a demo</span>
             </h1>
             <p className="mt-6 text-pretty text-lg text-muted-foreground animate-in fade-in slide-in-from-bottom-4 duration-700" style={{ animationDelay: "100ms" }}>
-              Our team is here to answer your questions and help you discover AuditPro.
+              Our team is here to answer your questions and help you discover Scayflo.
             </p>
           </div>
         </div>
@@ -242,7 +242,7 @@ export default function ContactPage() {
                 <h2 className="text-2xl font-bold text-foreground">Get in touch</h2>
                 <div className="space-y-4">
                   {[
-                    { icon: Mail, label: "Email", value: "hello@auditpro.io" },
+                    { icon: Mail, label: "Email", value: "hello@scayflo.io" },
                     { icon: Phone, label: "Phone", value: "+1 (555) 123-4567" },
                     { icon: MapPin, label: "Address", value: "123 Market Street, San Francisco, CA 94102" },
                     { icon: Calendar, label: "Hours", value: "Mon - Fri: 9am - 6pm EST" },

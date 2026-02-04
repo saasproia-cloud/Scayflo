@@ -34,8 +34,8 @@ export function SettingsPanel() {
 
   useEffect(() => {
     // Check for saved theme preference
-    const savedTheme = localStorage.getItem("auditpro-theme") || "dark"
-    const savedColor = localStorage.getItem("auditpro-color") || "green"
+    const savedTheme = localStorage.getItem("scayflo-theme") || "dark"
+    const savedColor = localStorage.getItem("scayflo-color") || "green"
     setTheme(savedTheme)
     setColorScheme(savedColor)
     applyTheme(savedTheme)
@@ -97,13 +97,13 @@ export function SettingsPanel() {
 
   const handleThemeChange = (newTheme: string) => {
     setTheme(newTheme)
-    localStorage.setItem("auditpro-theme", newTheme)
+    localStorage.setItem("scayflo-theme", newTheme)
     applyTheme(newTheme)
   }
 
   const handleColorChange = (newColor: string) => {
     setColorScheme(newColor)
-    localStorage.setItem("auditpro-color", newColor)
+    localStorage.setItem("scayflo-color", newColor)
     applyColorScheme(newColor)
   }
 

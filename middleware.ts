@@ -3,11 +3,11 @@ import type { NextRequest } from "next/server"
 import { jwtVerify } from "jose"
 
 const SECRET = new TextEncoder().encode(
-  process.env.JWT_SECRET ?? "auditpro-secret-change-in-production"
+  process.env.JWT_SECRET ?? "scayflo-secret-change-in-production"
 )
 
 export async function middleware(request: NextRequest) {
-  const token = request.cookies.get("auditpro-token")?.value
+  const token = request.cookies.get("scayflo-token")?.value
   const path = request.nextUrl.pathname
   const isDashboard = path.startsWith("/dashboard")
   const isAdmin = path.startsWith("/admin")
@@ -27,7 +27,7 @@ export async function middleware(request: NextRequest) {
       return NextResponse.next()
     } catch {
       const res = NextResponse.redirect(new URL("/login", request.url))
-      res.cookies.delete("auditpro-token")
+      res.cookies.delete("scayflo-token")
       return res
     }
   }
@@ -43,7 +43,7 @@ export async function middleware(request: NextRequest) {
       return NextResponse.next()
     } catch {
       const res = NextResponse.redirect(new URL("/login", request.url))
-      res.cookies.delete("auditpro-token")
+      res.cookies.delete("scayflo-token")
       return res
     }
   }

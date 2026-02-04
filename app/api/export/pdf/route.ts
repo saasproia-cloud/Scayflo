@@ -37,14 +37,14 @@ export async function GET(request: Request) {
     doc.rect(0, 0, doc.getPageWidth(), 28, "F")
     doc.setTextColor(255, 255, 255)
     doc.setFontSize(18)
-    doc.text(client.company?.name ?? "AuditPro", 14, 14)
+    doc.text(client.company?.name ?? "Scayflo", 14, 14)
     doc.setFontSize(10)
     doc.text(`Rapport d'audit professionnel · ${new Date().toLocaleDateString("fr-FR")}`, 14, 22)
     doc.setTextColor(0, 0, 0)
     y = 36
   } else {
     doc.setFontSize(22)
-    doc.text("AuditPro - Rapport d'audit", 14, y)
+    doc.text("Scayflo - Rapport d'audit", 14, y)
     y += 10
   }
 
@@ -159,7 +159,7 @@ export async function GET(request: Request) {
       doc.setFontSize(8)
       doc.setTextColor(128, 128, 128)
       doc.text(
-        `${client.company?.name ?? "AuditPro"} · ${client.name} · Page ${i}/${pageCount}`,
+        `${client.company?.name ?? "Scayflo"} · ${client.name} · Page ${i}/${pageCount}`,
         14,
         doc.getPageHeight() - 10
       )

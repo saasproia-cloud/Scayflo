@@ -24,7 +24,7 @@ export default function TermsPage() {
           </p>
           <div className="mt-8 space-y-6 text-muted-foreground">
             <p>
-              By using AuditPro (&quot;the Service&quot;), you agree to these Terms of Service.
+              By using Scayflo (&quot;the Service&quot;), you agree to these Terms of Service.
             </p>
             <h2 className="text-lg font-semibold text-foreground">Use of the Service</h2>
             <p>
@@ -36,7 +36,7 @@ export default function TermsPage() {
             </p>
             <h2 className="text-lg font-semibold text-foreground">Intellectual property</h2>
             <p>
-              AuditPro and its content are owned by us. You retain ownership of your data. We may use anonymized or aggregated data to improve the Service.
+              Scayflo and its content are owned by us. You retain ownership of your data. We may use anonymized or aggregated data to improve the Service.
             </p>
             <h2 className="text-lg font-semibold text-foreground">Limitation of liability</h2>
             <p>

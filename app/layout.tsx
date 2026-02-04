@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space" })
 
 export const metadata: Metadata = {
-  title: 'AuditPro - Automated Client Audit Platform',
+  title: 'Scayflo - Automated Client Audit Platform',
   description: 'B2B SaaS platform for marketing agencies, SEO specialists, and digital consultants. Generate professional client audits, visualize ROI, and prove your value.',
   generator: 'v0.app',
   icons: {

@@ -11,7 +11,7 @@ export function Footer() {
               <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-primary/80 shadow-lg shadow-primary/25">
                 <BarChart3 className="h-5 w-5 text-primary-foreground" />
               </div>
-              <span className="text-xl font-bold text-foreground">AuditPro</span>
+              <span className="text-xl font-bold text-foreground">Scayflo</span>
             </Link>
             <p className="mt-4 text-sm text-muted-foreground">
               The automated client audit platform for marketing agencies and digital consultants.
@@ -84,7 +84,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-border/50 pt-8">
           <p className="text-center text-sm text-muted-foreground">
-            © 2026 AuditPro. All rights reserved.
+            © 2026 Scayflo. All rights reserved.
           </p>
         </div>
       </div>

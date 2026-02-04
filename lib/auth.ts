@@ -2,9 +2,9 @@ import { SignJWT, jwtVerify } from "jose"
 import { cookies } from "next/headers"
 
 const SECRET = new TextEncoder().encode(
-  process.env.JWT_SECRET ?? "auditpro-secret-change-in-production"
+  process.env.JWT_SECRET ?? "scayflo-secret-change-in-production"
 )
-const COOKIE_NAME = "auditpro-token"
+const COOKIE_NAME = "scayflo-token"
 
 export interface TokenPayload {
   userId: string

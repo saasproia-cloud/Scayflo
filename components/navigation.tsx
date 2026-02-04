@@ -44,7 +44,7 @@ export function Navigation() {
           <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-primary/80 shadow-lg shadow-primary/25 transition-transform group-hover:scale-105">
             <BarChart3 className="h-5 w-5 text-primary-foreground" />
           </div>
-          <span className="text-xl font-bold text-foreground">AuditPro</span>
+          <span className="text-xl font-bold text-foreground">Scayflo</span>
         </Link>
 
         <div className="hidden items-center gap-8 md:flex">

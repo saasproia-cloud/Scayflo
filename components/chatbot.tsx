@@ -34,11 +34,11 @@ const themeColors = [
 ]
 
 const welcomeMessages: Record<string, string> = {
-  en: "Hello! Welcome to AuditPro. I'm your AI assistant. How can I help you today?",
-  fr: "Bonjour! Bienvenue sur AuditPro. Je suis votre assistant IA. Comment puis-je vous aider?",
-  es: "Hola! Bienvenido a AuditPro. Soy tu asistente de IA. ¿En que puedo ayudarte?",
-  de: "Hallo! Willkommen bei AuditPro. Ich bin Ihr KI-Assistent. Wie kann ich Ihnen helfen?",
-  pt: "Ola! Bem-vindo ao AuditPro. Sou seu assistente de IA. Como posso ajuda-lo?",
+  en: "Hello! Welcome to Scayflo. I'm your AI assistant. How can I help you today?",
+  fr: "Bonjour! Bienvenue sur Scayflo. Je suis votre assistant IA. Comment puis-je vous aider?",
+  es: "Hola! Bienvenido a Scayflo. Soy tu asistente de IA. ¿En que puedo ayudarte?",
+  de: "Hallo! Willkommen bei Scayflo. Ich bin Ihr KI-Assistent. Wie kann ich Ihnen helfen?",
+  pt: "Ola! Bem-vindo ao Scayflo. Sou seu assistente de IA. Como posso ajuda-lo?",
 }
 
 const quickReplies: Record<string, string[]> = {
@@ -241,7 +241,7 @@ export function Chatbot() {
                 <Bot className="h-5 w-5 text-white" />
               </div>
               <div>
-                <h3 className="font-semibold text-white">AuditPro AI</h3>
+                <h3 className="font-semibold text-white">Scayflo AI</h3>
                 <p className="text-xs text-white/80">Online</p>
               </div>
             </div>
@@ -316,7 +316,7 @@ export function Chatbot() {
           {showLanguageSelect ? (
             <div className="flex flex-col items-center justify-center p-8">
               <Sparkles className="mb-4 h-12 w-12 text-primary" />
-              <h3 className="mb-2 text-lg font-semibold text-foreground">Welcome to AuditPro!</h3>
+              <h3 className="mb-2 text-lg font-semibold text-foreground">Welcome to Scayflo!</h3>
               <p className="mb-6 text-center text-sm text-muted-foreground">
                 Please select your preferred language
               </p>

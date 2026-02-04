@@ -507,7 +507,7 @@ function DashboardContent() {
                   <div className="mt-8 rounded-2xl border border-border/50 bg-gradient-to-br from-card via-card to-primary/5 p-6 text-center">
                     <h3 className="text-lg font-semibold text-foreground">Want to see this with your own data?</h3>
                     <p className="mt-2 text-sm text-muted-foreground">
-                      Request a personalized demo and discover how AuditPro can help your agency.
+                      Request a personalized demo and discover how Scayflo can help your agency.
                     </p>
                     <Button className="mt-4 group shadow-lg shadow-primary/25" asChild>
                       <Link href="/contact">

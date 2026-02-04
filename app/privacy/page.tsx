@@ -24,7 +24,7 @@ export default function PrivacyPage() {
           </p>
           <div className="mt-8 space-y-6 text-muted-foreground">
             <p>
-              AuditPro (&quot;we&quot;, &quot;our&quot;) respects your privacy. This policy describes how we collect, use, and protect your personal data when you use our platform.
+              Scayflo (&quot;we&quot;, &quot;our&quot;) respects your privacy. This policy describes how we collect, use, and protect your personal data when you use our platform.
             </p>
             <h2 className="text-lg font-semibold text-foreground">Data we collect</h2>
             <p>

@@ -133,7 +133,7 @@ export default function FeaturesPage() {
               <span className="bg-gradient-to-r from-primary via-chart-2 to-primary bg-clip-text text-transparent">exceptional audits</span>
             </h1>
             <p className="mt-6 text-pretty text-lg text-muted-foreground animate-in fade-in slide-in-from-bottom-4 duration-700" style={{ animationDelay: "100ms" }}>
-              Discover all the tools that make AuditPro the preferred platform for marketing agencies and digital consultants worldwide.
+              Discover all the tools that make Scayflo the preferred platform for marketing agencies and digital consultants worldwide.
             </p>
           </div>
         </div>
@@ -293,7 +293,7 @@ export default function FeaturesPage() {
           <div className="relative overflow-hidden rounded-3xl border border-border/50 bg-gradient-to-br from-card via-card to-primary/5 p-8 text-center md:p-16">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 h-px w-1/2 bg-gradient-to-r from-transparent via-primary/50 to-transparent" />
             <h2 className="text-balance text-3xl font-bold text-foreground md:text-4xl">
-              Ready to discover AuditPro?
+              Ready to discover Scayflo?
             </h2>
             <p className="mt-4 text-muted-foreground">
               Start free and explore all these features today.

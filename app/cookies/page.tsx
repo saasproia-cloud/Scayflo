@@ -24,7 +24,7 @@ export default function CookiesPage() {
           </p>
           <div className="mt-8 space-y-6 text-muted-foreground">
             <p>
-              AuditPro uses cookies and similar technologies to provide and improve the Service.
+              Scayflo uses cookies and similar technologies to provide and improve the Service.
             </p>
             <h2 className="text-lg font-semibold text-foreground">Essential cookies</h2>
             <p>

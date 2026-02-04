@@ -62,7 +62,7 @@ const features = [
 
 const testimonials = [
   {
-    quote: "AuditPro has cut our report time by 3x. A must-have for any marketing agency.",
+    quote: "Scayflo has cut our report time by 3x. A must-have for any marketing agency.",
     author: "Sarah Johnson",
     role: "Director, WebPulse Agency",
     rating: 5,
@@ -204,7 +204,7 @@ export default function HomePage() {
               Trusted by agencies worldwide
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Discover what our users say about AuditPro.
+              Discover what our users say about Scayflo.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-3">
@@ -242,7 +242,7 @@ export default function HomePage() {
               Ready to transform your client audits?
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Join over 500 agencies using AuditPro to impress their clients and prove their ROI.
+              Join over 500 agencies using Scayflo to impress their clients and prove their ROI.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Button size="lg" className="group shadow-lg shadow-primary/25" asChild>

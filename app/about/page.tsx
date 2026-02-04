@@ -17,10 +17,10 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-primary/20 via-background to-background" />
         <div className="relative mx-auto max-w-3xl px-6">
           <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground md:text-5xl">
-            About AuditPro
+            About Scayflo
           </h1>
           <p className="mt-6 text-lg text-muted-foreground">
-            AuditPro is the all-in-one platform for marketing agencies, SEO consultants, and freelancers. 
+            Scayflo is the all-in-one platform for marketing agencies, SEO consultants, and freelancers. 
             We help you analyze, visualize, and present your client data with professional dashboards and PDF reports.
           </p>
           <p className="mt-4 text-muted-foreground">

@@ -3,13 +3,13 @@ import { cookies } from "next/headers"
 import { jwtVerify } from "jose"
 
 const SECRET = new TextEncoder().encode(
-  process.env.JWT_SECRET ?? "auditpro-secret-change-in-production"
+  process.env.JWT_SECRET ?? "scayflo-secret-change-in-production"
 )
 
 export async function GET() {
   try {
     const cookieStore = await cookies()
-    const token = cookieStore.get("auditpro-token")?.value
+    const token = cookieStore.get("scayflo-token")?.value
     if (!token) {
       return NextResponse.json([], { status: 200 })
     }
