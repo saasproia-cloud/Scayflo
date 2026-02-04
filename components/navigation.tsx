@@ -41,11 +41,11 @@ export function Navigation() {
     <header className="fixed top-0 left-0 right-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link href="/" className="group flex items-center gap-2">
-            <div className="flex h-9 w-9 items-center justify-center rounded-md bg-primary/10 transition-transform group-hover:scale-105">
-              <BarChart3 className="h-5 w-5 text-primary" />
-            </div>
-            <span className="text-xl font-semibold text-foreground">AuditPro</span>
-          </Link>
+          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-primary/80 shadow-lg shadow-primary/25 transition-transform group-hover:scale-105">
+            <BarChart3 className="h-5 w-5 text-primary-foreground" />
+          </div>
+          <span className="text-xl font-bold text-foreground">AuditPro</span>
+        </Link>
 
         <div className="hidden items-center gap-8 md:flex">
           <Link href="/features" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
@@ -89,9 +89,9 @@ export function Navigation() {
                 <Button variant="ghost" size="sm" className="bg-transparent hover:bg-secondary" asChild>
                   <Link href="/login">Sign In</Link>
                 </Button>
-                <Button size="sm" className="transition" asChild>
+                <Button size="sm" className="shadow-lg shadow-primary/25 transition-all hover:shadow-xl hover:shadow-primary/30" asChild>
                   <Link href="/signup">Start Free</Link>
-                </Button> 
+                </Button>
               </>
             )
           )}

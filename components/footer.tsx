@@ -8,12 +8,12 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-4">
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-md bg-primary/10">
-                <BarChart3 className="h-5 w-5 text-primary" />
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-primary/80 shadow-lg shadow-primary/25">
+                <BarChart3 className="h-5 w-5 text-primary-foreground" />
               </div>
-              <span className="text-xl font-semibold text-foreground">AuditPro</span>
+              <span className="text-xl font-bold text-foreground">AuditPro</span>
             </Link>
-            <p className="mt-4 text-sm text-muted-foreground max-w-sm">
+            <p className="mt-4 text-sm text-muted-foreground">
               The automated client audit platform for marketing agencies and digital consultants.
             </p>
           </div>
