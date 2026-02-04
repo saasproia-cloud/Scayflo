@@ -1,0 +1,89 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String    @id @default(cuid())
+  email        String    @unique
+  passwordHash String
+  name         String
+  role         String    @default("user") // "user" | "admin"
+  companyId    String    @unique
+  company      Company   @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  createdAt    DateTime  @default(now())
+}
+
+model Company {
+  id        String   @id @default(cuid())
+  name      String
+  plan      String   @default("free") // "free" | "premium"
+  user      User?
+  clients   Client[]
+  dataSources DataSource[]
+  reports   Report[]
+  createdAt DateTime @default(now())
+}
+
+model Client {
+  id            String    @id @default(cuid())
+  companyId     String
+  company       Company   @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  name          String
+  sector        String
+  status        String    @default("active")
+  lastAudit     DateTime? @default(now())
+  dashboardData String?   // JSON
+  metrics       Metric[]
+  createdAt     DateTime  @default(now())
+}
+
+model ContactSubmission {
+  id          String   @id @default(cuid())
+  name        String
+  email       String
+  company     String?
+  phone       String?
+  message     String
+  demoRequest Boolean  @default(false)
+  createdAt   DateTime @default(now())
+}
+
+// Data source types: manual | csv | sheets | api (ready for GA, Ads, Stripe)
+model DataSource {
+  id        String   @id @default(cuid())
+  companyId String
+  company   Company  @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  type      String   // "manual" | "csv" | "sheets" | "api"
+  name      String
+  config    String?  // JSON: column mapping, API keys placeholder, etc.
+  createdAt DateTime @default(now())
+}
+
+// Time-series metrics per client (traffic, leads, revenue, costs, conversions, custom)
+model Metric {
+  id        String   @id @default(cuid())
+  clientId  String
+  client    Client   @relation(fields: [clientId], references: [id], onDelete: Cascade)
+  type      String   // "traffic" | "leads" | "revenue" | "costs" | "conversions" | "custom"
+  name      String
+  value     Float
+  date      DateTime // period start or date
+  meta      String?  // JSON
+  createdAt DateTime @default(now())
+}
+
+// Export history: basic (free) vs professional (premium)
+model Report {
+  id         String   @id @default(cuid())
+  companyId  String
+  company    Company  @relation(fields: [companyId], references: [id], onDelete: Cascade)
+  clientId   String
+  clientName String
+  type       String   // "basic" | "professional"
+  createdAt  DateTime @default(now())
+}
