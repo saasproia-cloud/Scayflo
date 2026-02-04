@@ -1,0 +1,24 @@
+{
+  "name": "express-mongo-jwt-auth",
+  "version": "1.0.0",
+  "description": "A Node.js project using Express and MongoDB with JWT authentication and email sending functionality.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.9",
+    "nodemailer": "^6.4.11"
+  },
+  "devDependencies": {
+    "jest": "^26.6.0",
+    "supertest": "^6.1.0"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
